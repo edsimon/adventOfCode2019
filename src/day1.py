@@ -4,8 +4,7 @@ def calc_fuel(mass):
     return int((mass/3)-2)
 
 def read_file(filepath):
-    first_sum = 0
-    second_sum = 0
+    first_sum, second_sum = 0, 0
     with open(filepath) as f:
         line = int(f.readline())
         while line:
@@ -22,10 +21,8 @@ def read_file(filepath):
 
             # Takes a new line and handles the empty string
             line = f.readline()
-            if len(line) == 0:
-                line = 0
-            else:
-                line = int(line)
+            line = 0 if line == "" else int(line)
+
 
     print("Sum of the first problem is {}\nSecond problem gives {}".format(first_sum, second_sum))
 
