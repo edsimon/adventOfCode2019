@@ -1,34 +1,18 @@
-filepath = "../data/day03.txt"
+import operator
 
 def get_path(data) :
-    data = data.split(",")
+    steps = {"L": (-1, 0), "R": ( 1, 0), "U": ( 0, 1), "D": ( 0,-1)}
     position = (0,0)
     path = [position]
-    for dir in data:
-        distance = int(dir[1:])
-        if dir[0] == "L":
-            for i in range(distance):
-                position = (position[0] - 1, position[1])
-                path.append(position)
-        elif dir[0] == "U":
-            for i in range(distance):
-                position = (position[0], position[1] + 1)
-                path.append(position)
-        elif dir[0] == "R":
-            for i in range(distance):
-                position = (position[0] + 1, position[1])
-                path.append(position)
-        elif dir[0] == "D":
-            for i in range(distance):
-                position = (position[0], position[1] - 1)
-                path.append(position)
-    return(path)
-
+    for dir in data.split(","):
+        for i in range(int(dir[1:])):
+            position = tuple(map(operator.add, position, steps.get(dir[0])))
+            path.append(position)
+    return path
 
 def solver(path1,path2):
     crosses_at = list(set(path1).intersection(path2))[1:]
     shortest_dist, shortest_path = 99999, 99999
-
     for x,y in crosses_at:
         # For task 1
         if abs(x)+abs(y) < shortest_dist :
@@ -36,13 +20,10 @@ def solver(path1,path2):
 
         # For task 2
         dist = path1.index((x,y)) + path2.index((x,y))
-        if  dist < shortest_path:
-            shortest_path = dist
-
+        shortest_path = dist if dist < shortest_path else shortest_path
     return (shortest_dist, shortest_path)
 
-
-with open(filepath) as f:
+with open("../data/day03.txt") as f:
     path1 = get_path(f.readline())
     path2 = get_path(f.readline())
     dist, pos = solver(path1, path2)
