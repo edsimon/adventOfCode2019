@@ -4,7 +4,7 @@
 
 | Day  | Part One | Part Two | 
 |---|:---:|:---:|
-|✔️ Day 1: The Tyranny of the Rocket Equation  | ⭐️ | ⭐️ |
+|✔️ [Day 1]((https://adventofcode.com/2019/day/1)): [The Tyranny of the Rocket Equation](https://github.com/edsimon/adventOfCode2019/blob/master/src/day1.py)  | ⭐️ | ⭐️ |
 |✔️ Day 2: 1202 Program Alarm  | ⭐️ | ⭐️ |
 |✔️ Day 3: Crossed Wires  | ⭐️ | ⭐ |
 |✔️ Day 4: Secure Container | ⭐ | ⭐ |
