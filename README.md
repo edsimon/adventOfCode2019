@@ -2,12 +2,12 @@
 
 ## Days
 
-| Day  | Solution | Part One | Part Two | 
+| Day *link to question*  | Solution | Part One | Part Two | 
 |---|:---:|:---:|:---:|
 |✔️ [Day 1 : The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day1.py) | ⭐️ | ⭐️ |
-|✔️ [Day 2: 1202 Program Alarm](https://adventofcode.com/2019/day/1) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day2.py) | ⭐️ | ⭐️ |
-|✔️ [Day 3: Crossed Wires](https://adventofcode.com/2019/day/1) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day03.py) | ⭐️ | ⭐ |
-|✔️ [Day 4: Secure Container](https://adventofcode.com/2019/day/1) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day04.py) | ⭐ | ⭐ |
+|✔️ [Day 2: 1202 Program Alarm](https://adventofcode.com/2019/day/2) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day2.py) | ⭐️ | ⭐️ |
+|✔️ [Day 3: Crossed Wires](https://adventofcode.com/2019/day/3) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day03.py) | ⭐️ | ⭐ |
+|✔️ [Day 4: Secure Container](https://adventofcode.com/2019/day/4) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day04.py) | ⭐ | ⭐ |
 | Day 5: |  |  |  |
 | Day 6: |  |  |  |
 | Day 7: |  |  |  |
