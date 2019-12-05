@@ -1,4 +1,4 @@
-def solver(data, stdin):
+def solver(data, input):
     index_inc = {1:4, 2:4, 3:2, 4:2, 5:3, 6:3, 7:4, 8:4}
     program = data[:] # safe copy
     index = 0
@@ -22,7 +22,7 @@ def solver(data, stdin):
             program[program[index+3]] = params[0] * params[1]
 
         elif op_code == 3:
-            program[program[index+1]] = stdin
+            program[program[index+1]] = input
 
         elif op_code == 4:
             if params[0] > 0:
