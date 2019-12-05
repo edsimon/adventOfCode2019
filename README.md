@@ -8,7 +8,7 @@
 |✔️ [Day 2: 1202 Program Alarm](https://adventofcode.com/2019/day/2) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day2.py) | ⭐️ | ⭐️ |
 |✔️ [Day 3: Crossed Wires](https://adventofcode.com/2019/day/3) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day03.py) | ⭐️ | ⭐ |
 |✔️ [Day 4: Secure Container](https://adventofcode.com/2019/day/4) | [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day04.py) | ⭐ | ⭐ |
-| Day 5: |  Solution  |  |  |
+|✔️ [Day 5: Sunny with a Chance of Asteroids](https://adventofcode.com/2019/day/5) |  [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day05.py)  | ⭐ | ⭐ |
 | Day 6: |  Solution  |  |  |
 | Day 7: |  Solution  |  |  |
 | Day 8: |  Solution  |  |  |
