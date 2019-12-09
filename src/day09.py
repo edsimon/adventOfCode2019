@@ -6,12 +6,12 @@ def parse_input(input):
 
 class Amp:
     def __init__(self, program, input = []):
-        self.memory = defaultdict(int)
+        self.memory = {}
         for i, b in enumerate(program):
             self.memory[i] = b
         self.input = input
         self.pc = 0
-        self.rel_base_offset = 0
+        self.offset = 0
 
     def get_address(self, mode, offset):
         if mode == 0:
@@ -19,9 +19,8 @@ class Amp:
         elif mode == 1:
             return offset
         elif mode == 2:
-            return self.memory[offset] + self.rel_base_offset
-        else:
-            raise ValueError("Bad param mode: {} pc: {}".format(mode, self.pc))
+            return self.memory[offset] + self.offset
+
 
     def get_parameters(self, num):
         modes = self.memory[self.pc] // 100
@@ -82,12 +81,10 @@ class Amp:
                 self.pc += len(params) + 1
             elif op_code == 9:
                 params = self.get_parameters(1)
-                self.rel_base_offset += self.memory[params[0]]
+                self.offset += self.memory[params[0]]
                 self.pc += len(params) + 1
             elif op_code == 99:
                 return None
-            else:
-                raise ValueError("Unknown op_code: {} at {}".format(op_code, self.pc))
 
 
 def solve1(program):
