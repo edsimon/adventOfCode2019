@@ -13,7 +13,7 @@
 |✔️ [Day 7: Amplification Circuit](https://adventofcode.com/2019/day/7) |  [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day07.py)  | ⭐ | ⭐ |
 |✔️ [Day 8: Space Image Format](https://adventofcode.com/2019/day/8) |  [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day08.py)  | ⭐ | ⭐ |
 |✔️ [Day 9: Sensor Boost](https://adventofcode.com/2019/day/9) |  [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day09.py)  | ⭐ | ⭐ |
-| Day 10: |  Solution  |  |  |
+|✔️ [Day 10: Monitoring Station](https://adventofcode.com/2019/day/10) |  [Solution](https://github.com/edsimon/adventOfCode2019/blob/master/src/day10.py)  | ⭐ | ⭐ |
 | Day 11: |  Solution  |  |  |
 | Day 12: |  Solution  |  |  |
 | Day 13: |  Solution  |  |  |
